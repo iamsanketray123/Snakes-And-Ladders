@@ -13,6 +13,12 @@
 		1978112F28C99A2A005E858A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978112D28C99A2A005E858A /* Main.storyboard */; };
 		1978113128C99A2C005E858A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1978113028C99A2C005E858A /* Assets.xcassets */; };
 		1978113428C99A2C005E858A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1978113228C99A2C005E858A /* LaunchScreen.storyboard */; };
+		1978113C28C99AF2005E858A /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978113B28C99AF2005E858A /* Board.swift */; };
+		1978113E28C99C68005E858A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1978113D28C99C68005E858A /* Queue.swift */; };
+		19FEDFB628C9B84900EC78F7 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEDFB528C9B84900EC78F7 /* Dice.swift */; };
+		19FEDFB828C9B85B00EC78F7 /* Ladder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEDFB728C9B85B00EC78F7 /* Ladder.swift */; };
+		19FEDFBA28C9B86600EC78F7 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEDFB928C9B86600EC78F7 /* Snake.swift */; };
+		19FEDFBC28C9B87200EC78F7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEDFBB28C9B87200EC78F7 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1978113028C99A2C005E858A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1978113328C99A2C005E858A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1978113528C99A2C005E858A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1978113B28C99AF2005E858A /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		1978113D28C99C68005E858A /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		19FEDFB528C9B84900EC78F7 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		19FEDFB728C9B85B00EC78F7 /* Ladder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ladder.swift; sourceTree = "<group>"; };
+		19FEDFB928C9B86600EC78F7 /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		19FEDFBB28C9B87200EC78F7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +70,43 @@
 			children = (
 				1978112728C99A2A005E858A /* AppDelegate.swift */,
 				1978112928C99A2A005E858A /* SceneDelegate.swift */,
-				1978112B28C99A2A005E858A /* ViewController.swift */,
+				1978113F28C99E2D005E858A /* Data Structures */,
+				1978114028C99E35005E858A /* Model */,
+				19FEDFBD28C9B89400EC78F7 /* View Controllers */,
 				1978112D28C99A2A005E858A /* Main.storyboard */,
 				1978113028C99A2C005E858A /* Assets.xcassets */,
 				1978113228C99A2C005E858A /* LaunchScreen.storyboard */,
 				1978113528C99A2C005E858A /* Info.plist */,
 			);
 			path = SnakesAndLadders;
+			sourceTree = "<group>";
+		};
+		1978113F28C99E2D005E858A /* Data Structures */ = {
+			isa = PBXGroup;
+			children = (
+				1978113D28C99C68005E858A /* Queue.swift */,
+			);
+			path = "Data Structures";
+			sourceTree = "<group>";
+		};
+		1978114028C99E35005E858A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1978113B28C99AF2005E858A /* Board.swift */,
+				19FEDFBB28C9B87200EC78F7 /* Player.swift */,
+				19FEDFB928C9B86600EC78F7 /* Snake.swift */,
+				19FEDFB728C9B85B00EC78F7 /* Ladder.swift */,
+				19FEDFB528C9B84900EC78F7 /* Dice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		19FEDFBD28C9B89400EC78F7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1978112B28C99A2A005E858A /* ViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +180,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19FEDFBA28C9B86600EC78F7 /* Snake.swift in Sources */,
+				1978113E28C99C68005E858A /* Queue.swift in Sources */,
 				1978112C28C99A2A005E858A /* ViewController.swift in Sources */,
+				19FEDFB828C9B85B00EC78F7 /* Ladder.swift in Sources */,
 				1978112828C99A2A005E858A /* AppDelegate.swift in Sources */,
+				1978113C28C99AF2005E858A /* Board.swift in Sources */,
+				19FEDFB628C9B84900EC78F7 /* Dice.swift in Sources */,
+				19FEDFBC28C9B87200EC78F7 /* Player.swift in Sources */,
 				1978112A28C99A2A005E858A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
